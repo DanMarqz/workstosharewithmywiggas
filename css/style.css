@@ -1,0 +1,265 @@
+/*Color del body*/
+* {/*Adaptarse al tamaño del navegador*/
+    box-sizing: border-box;
+}
+body { /*Color de todas páginas*/
+    padding: 0; 
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+body::-webkit-scrollbar{ /*Altera la scrollbar del navegador dentro de la página*/
+    width: 5px;
+}
+body::-webkit-scrollbar-thumb{ /*Altera la scrollbar del navegador dentro de la página*/
+    background-color: white;
+    outline: 1px solid darkgrey;
+}
+#cabecera { /*Coloca el fondo del título de la págian en negro para que parezca invisible*/
+    background-color: black; 
+}  
+h1 {  /*le da formato a la cabecera*/
+    font: bold 1.5em arial;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#navegador { /*Establece formatos de color y espacio a la barra de navegación*/
+    background-color: #000000; 
+    color: white;
+    padding: 0.5em; 
+}
+#navegador li {/*Establece formatos de espacio a la barra de  navegación*/ 
+    margin: 0px 5px; 
+    padding: 0.1em 1em 0.5em 1em;
+    background-color: #000000; 
+    float: left;
+    list-style-type: none;
+}
+#seccion0{/*Establece el tamaño de la barra del menú*/
+    width: 75px;
+}
+#seccion1{/*Establece el tamaño de la barra del menú*/
+    width: 160px;
+}
+#navegador li a:link, #navegador li a:visited { /*cuando un link ya esté visitado mantiene el color*/
+    color: white; 
+    text-decoration: none; 
+}
+#navegador li a:hover, #navegador li a:active { /*para cuando el cursor esté encima del menú cambia los coloroes*/
+    background-color: white;
+    color: black; 
+    text-decoration: none; 
+}
+.borrar { /*agrega un espacio después de la barra de navegación*/
+    clear: both; 
+}
+
+/*Inicia modificación de poemas*/
+div.escritopoema1{/*ajusta los margenes izquierda-derecha-superior-inferior*/
+    padding: 5%;
+}
+#escrito1{/*Modifica los formatos de los poemas de los poemas a la derecha*/
+    font: normal 0.9em;
+    text-align: right;
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+h3#titulo1 {/*Modifica el formato de los título del poema de los poemas a la derecha*/
+    font: bold 1.5em arial;
+    color: white;
+    text-align: right;
+    margin: 0;
+    padding-right: 2em;
+    margin: 2em;
+}
+#foto1{ /*Modifica el formato de las fotos adjuntas de los poemas a la derecha*/
+    width: 100%;
+    float: left;
+    padding: 5%;
+}
+div.polaroidpoema1{ /*Le da formato a la instántanea dandole sombra y el recuadro blanco*/
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.212), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    margin: 5% 0% 5% 0;    
+} 
+div.containerpoema1{ /*Le da formato al texto de la "instántanea"*/
+    text-align: center;
+    padding: 1em 10px;
+    color: black;
+    font-family: 'Century Gothic';
+    font-size: 12px;
+}
+div.escritopoema2{/*ajusta los margenes izquierda-derecha-superior-inferior*/
+    padding: 5%;
+}
+#escrito2{/*Modifica los formatos de los poemas de los poemas a la izquierda*/
+    font: normal 0.9em;
+    text-align: left;
+    font-family: Verdana;
+    box-sizing: content-box;
+}
+h3#titulo2 {/*Modifica el formato de los título del poema de los poemas a la izquierda*/
+    font: bold 1.5em arial; 
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding-left: 2em;
+    margin: 2em;
+}
+#foto2{ /*Modifica el formato de las fotos adjuntas de los poemas a la izquierda*/
+    width: 100%;
+    float: right;
+    padding: 5%;
+}
+div.polaroidpoema2{ /*Le da formato a la instántanea dandole sombra y el recuadro blanco*/
+    width: 27%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.212), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+    margin: 5% 0% 5% 0;    
+} 
+div.containerpoema2{ /*Le da formato al texto de la "instántanea"*/
+    text-align: center;
+    padding: 1px 10px;
+    color: black;
+    font-family: 'Century Gothic';
+    font-size: 12px;
+}
+/*Finaliza modificación de poemas*/
+
+/*Inicia modificación de relatos*/  
+#titulo{/*Modifica el título del relato*/
+    text-align: center;
+    text-transform: uppercase;
+    font: Verdana;
+    color: white;
+}
+div.escritorelato{ /*Crea un cuadro de 850x620 para la lectura del relato con un scroll y le da formato al texto*/
+    max-width: 850px;
+    max-height: 620px;
+    color: rgb(197, 197, 197);
+    box-sizing: content-box;
+    text-align: justify;
+    overflow-y: scroll;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin-left: 4.7%;
+    resize: both;
+    font-size: small;
+    margin-bottom: 2.5%;
+}
+div.escritorelato p.hank{/*Le coloca formato a todos los diálogos de Hank que es el protagonista*/
+    color:#34526F;
+}
+div.escritorelato p.ella{/*Le da formato a los diálogos de la mujer con la que hablar hank*/
+    color: palevioletred;
+}
+div.escritorelato p.persona{/*Le da formato a los diálogos de una tercera persona*/
+    color:darkgreen
+}
+#fotorelato{ /*Formato de las imágenes de los libros*/
+    width: 100%;
+}
+div.polaroidretrato{ /*Se define el formato de la instántanea dándole sombra y estableciendo float a al derecha*/
+    width: 21.5%;
+    background-color: #1b1b1b;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 16px 50px 20px 0%;
+    float: right;
+    border: 1px solid black;
+} 
+div.containerretrato{ /*Para colocar la descripción en la instántanea*/
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    text-align: justify;
+    font-family: 'Century Gothic';
+}
+/*Inicia Edit barra del scroll relatos
+https://css-tricks.com/almanac/properties/s/scrollbar/
+https://css-tricks.com/custom-scrollbars-in-webkit/*/
+div.escritorelato::-webkit-scrollbar { /*Establece la anchura del scrollbar*/
+    width: 4px;
+}
+div.escritorelato::-webkit-scrollbar-track{ /*Es el límite de la scrollbar*/
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.329);
+}
+div.escritorelato::-webkit-scrollbar-thumb{ /*le da formato a la barra*/
+    background-color: white;
+    outline: 1px solid darkgrey;
+    border-radius: 1em;
+}
+/*Fin Edit barra del scroll relatos*/
+/*Finaliza modificación de relatos*/
+
+/* Inicia de modificación biografía */
+div.biografia{ /* Establece el tamaño de la "instántanea"*/
+    max-width: 50%;
+    align-content: center;
+    float: left;
+    padding-left: 5%;
+}
+#fotobio{ /*Formato de la "instántanea*/
+    width:100%;
+    padding: 2.5%;
+    border: #e7e7e794;
+}
+div.polaroid{ /*Le da formato a la instántanea dandole sombra y el recuadro blanco*/
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.212), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+} 
+div.container{ /*Le da formato al texto de la "instántanea"*/
+    text-align: center;
+    padding: 1px 10px;
+    color: black;
+    font-family: 'Century Gothic';
+    font-size: 12px;
+}
+div.escritobio#biografia{ /*Le da formato al texto informativo de la biografía*/
+    background-color: white;
+    max-width: 100%;
+    text-align: right;
+    justify-content: right;
+    font-family: 'Consolas';
+    color: black;
+    float: inline;
+    padding-left: 10%;
+    padding-right: 6%;
+    align-content: center;
+}
+/* Fin de modificación biografía*/
+
+/*Inicia modificación home*/
+.acceso img{ /*Formato para las imagenes de home*/
+    width: 65%;
+    height: 500px;
+    margin-left: 17.5%;
+    position: relative;
+    transition: .4s;
+}
+
+.acceso img:hover{ /*Disminuye la opacidad cuando el cursor está encima*/
+    opacity: .3;
+}
+
+.acceso{ /*posición relativa del contenedor*/
+    position: relative;
+}
+.text {/*Formatos para el texto*/
+    position: relative;
+    left: 0;
+    top: 268px;
+    width: 65%;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 17.5%;
+    background-color: #1a1a1aa8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Finaliza modificación home*/
